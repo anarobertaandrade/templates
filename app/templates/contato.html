@@ -1,56 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <meta name="language" content="pt-BR">
-    <title>Ana Roberta | Contato</title>
-    <meta name="description" content="Desenvolvedor de programação web em formação.">
-    <meta name="robots" content="index">
-    <meta name="author" content="Ana Roberta Ferreira de Andrade">
-    <meta name="keywords" content="python, flask, sql">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- bootstrap-icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="text-white no-repeat" style="background-image: url(../img/bg_site_portfolio3.jpg); height: 100vh;">
-    <script type="text/javascript" src="../js/letter.js"></script>
- <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3 mt-5 text-center">
-            <a class="navbar-brand" href="#">
-                <img src="../img/logo_roberta_andrade.png" alt="logo"> 
-             </a>
-        </div>
-        <div class="col-md-6 mt-5 text-center">
-            <a href="./index.html" class="btn btn-outline-black btn-outline-secondary">Home</a>
-            <a href="./contato.html" class="btn btn-outline-black btn-outline-secondary">Contato</a>
-            <a href="./sobre.html" class="btn btn-outline-black btn-outline-secondary">Sobre</a>
-        </div>
-        <div class="col-md-3 mt-5 text-center">
-            <a class="btn btn-outline-black" target="_blank" href="https://www.instagram.com/anarobertaandrade/?hl=pt">
-                <i class="bi bi-instagram"></i>
-            </a>
-           
-            <a class="btn btn-outline-black" target="_blank" href="mailto:anarobertaunp@gmail.com">
-                <i class="bi bi-envelope"></i>
-            </a>
-            <a class="btn btn-outline-black" target="_blank" href="https://www.behance.net/anarobertac69d">
-                <i class="bi bi-behance"></i>
-            </a>
-            <a class="btn btn-outline-black" target="_blank" href="https://www.linkedin.com/in/ana-roberta-andrade-260a58a9/">
-                <i class="bi bi-linkedin"></i>
-            </a>
-            <a class="btn btn-outline-black" href="tel:+5584999819055">
-                <i class="bi bi-telephone-forward"></i>
-            </a>
-        </div>
-     </div>
-     <main class="text-center mt-5 text-black">
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<main class="text-center mt-5 text-black">
         <h2>Contato</h2>
         <div class="row">
             <div class="col-md-3"></div>
@@ -73,7 +24,7 @@
             </div>
             <div class="col-md-3"></div>
             </div>
-
+{% endblock %}
     
         </main>
      <footer class="text-center fixed-bottom text-black">
