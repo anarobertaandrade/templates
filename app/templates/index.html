@@ -1,28 +1,18 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
-<main class="px-3">
-    <img src="{{ url_for('static', filename='img/val.jpg')}}" alt="Max-width 50%" class="h-50 rounded-circle">
-    <h1>Valtemir Procópio de Lima</h1>
-    <p class="lead">Apaixonado por tecnologias. <br>
-        Graduando do curso Licenciatura em Informática/IFRN. <br>
-        Técnico em Redes de Computadores/IMD-UFRN.</p>
-    <p class="lead">
-        <a class="link-dark" href="https://github.com/valtemirprocopio" >
-            <button type="button" class="btn btn-light">
-                <i class="bi bi-github"></i>
-            </button>
-        </a>
-        <a class="link-dark" href="https://github.com/valtemirprocopio" >
-            <button type="button" class="btn btn-light">
-                <i class="bi bi-instagram"></i>
-            </button>
-        </a>
-        <a class="link-dark" href="https://github.com/valtemirprocopio" >
-            <button type="button" class="btn btn-light">
-                <i class="bi bi-youtube"></i>
-            </button>
-        </a>
-    </p>
+<main class="text-center mt-5">
+    <h2 class="ml11">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters text-black">Ana Roberta Andrade</span>
+        </span>
+      </h2>
+ <div class="">
+    <img src="../img/foto_anaroberta_potfolio.jpg" class="rounded-circle" alt="..." width="200" height="200">
+  </div>
+  <div class="text-black">
+  <p>Olá, seja bem-vindo! Sou uma desenvolvedora front-end freelancer com mais de 7 anos de experiência no mercado de Designer.<br>Nossa missão é criar um site que fortaleça a marca da sua empresa e ao mesmo tempo garanta<br>a facilidade de uso e simplicidade para o seu público.
+  </div>
 </main>
 {% endblock %}
