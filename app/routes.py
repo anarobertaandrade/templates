@@ -14,3 +14,7 @@ def contato():
 @app.route('/sobre')
 def sobre():
     return render_template('sobre.html')
+
+@app.route('/jobs')
+def jobs():
+    return render_template('jobs.html')
