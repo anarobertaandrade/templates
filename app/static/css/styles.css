@@ -13,6 +13,16 @@
   }
 }
 
+   body{
+	margin: 3em;
+}
+.card:hover{
+	transform: scale(1.2);
+}
+.card{
+	transition: transform .5s;
+} 
+
 
 
 .progress-title{

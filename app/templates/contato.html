@@ -3,22 +3,35 @@
 {% block conteudo %}
 <main class="text-center mt-5 text-black">
         <h2>Contato</h2>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for msg in messages %}
+            <div class="alert alert-success" role="alert">
+              {{msg}}
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-            <form action="">
+            <form action="" method='POST'>
+                {{ form.csrf_token }}
                 <div class="text-start form-group">
                     <label for="text">Nome completo</label>
-                    <input class="form-control" type="text" name="nomecompleto">
+                    {{ form.nome(class ='form-control', placeholder= 'Digite seu nome')}}
                     <label for="email">E-mail</label>
-                    <input class="form-control" type="email" name="email">
+                    {{ form.email(class ='form-control', placeholder= 'Digite seu email')}}
                     <label for="text">Assunto</label>
-                    <input class="form-control" type="text" name="assunto">
-                    <label for="text">Corpo do e-mail</label>
-                    <textarea class="form-control" name="textarea"></textarea>
+                    {{ form.assunto(class ='form-control', placeholder= 'Digite o assunto')}}
+                    <label for="text">Mensagem</label>
+                    {{ form.mensagem(class ='form-control', rows ="3" ,placeholder= 'Digite sua mensagem')}}
                     <label for="file">Arquivo</label>
                     <input class="form-control" type="file" name="file" >
-             
+                    <div class="text-center"> 
+                        {{ form.submit(class=" text-center mt-4 btn btn-light") }}
+                    </div>
+                    
                 </div>
             </form>
             </div>
